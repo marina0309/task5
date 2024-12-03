@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Елки для всех!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cont">
+    <div class="col-start-2 lg:col-start-3 col-span-4 lg:col-span-2 flex flex-col">
+        <form class="flex flex-col">
+            <label class="text-center flex flex-col">
+                 Количество елок
+                 <input id="quantityInput" class="px-1 my-1" type="number"/>
+            </label>
+            <label class="flex flex-col items-center">
+                <select id="select">
+                    <option value="product1">Елка 180см</option>
+                    <option value="product2">Елка 200см</option>
+                    <option value="product3">Елка 230см</option>
+                </select>
+            </label>
+        </form>
+        <button id="calculate">Рассчитать стоимость</button>
+        <div id="answerDiv" class="px-5 text-center bg-orange-200"></div>
+    </div>
+</div>
+</body>
+</html>
